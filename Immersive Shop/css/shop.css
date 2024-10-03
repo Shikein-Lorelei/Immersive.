@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.eot");
+    src: url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.svg#Helvetica")format("svg");
+}
+
+@font-face {
+    font-family: "Akira Expanded";
+    src: url("https://db.onlinewebfonts.com/t/6fa591daa0aa2d0f845653486954aca5.eot");
+    src: url("https://db.onlinewebfonts.com/t/6fa591daa0aa2d0f845653486954aca5.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6fa591daa0aa2d0f845653486954aca5.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6fa591daa0aa2d0f845653486954aca5.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6fa591daa0aa2d0f845653486954aca5.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6fa591daa0aa2d0f845653486954aca5.svg#Akira Expanded")format("svg");
+}
+   * {    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    }
+
+    body{
+        font-family: "Helvetica";
+        background-color: rgb(123, 123, 130);
+    }
+
+    nav{
+        display: flex;
+        position: sticky;
+        top: 0%;
+        background-color: black;
+        color: white;
+        z-index: 100;
+    }
+
+    .navbar{
+        padding: 30px 0 20px 20px;
+    }
+
+    .rotate{
+    rotate: 180deg;
+    display: inline-block;   
+    margin-left: 10px;        
+    }
+
+    .brand{
+        padding-left: 120px;
+        padding-top: 25px;   
+        padding-bottom: 0;             
+    }
+
+    .navbar a{
+        color: white;
+        margin-right: 15px;
+        font-size: 16px;
+    }       
+    
+    
+    
+    .product-container {
+        display: flex;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        padding-bottom: 100px;
+        padding-top: 80px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+    }
+    
+    .image-wrapper {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin-right: 40px;
+    }
+    
+    .product-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out;
+        background-color: rgb(192, 160, 160);
+        border-radius: 30px;
+    }
+    
+    .hover-image {
+        opacity: 0;
+    }
+    
+    .image-wrapper:hover .hover-image {
+        opacity: 1;
+    }
+    
+    .image-wrapper:hover .product-image:not(.hover-image) {
+        opacity: 0;
+    }
+    
+    .product-details {
+        max-width: 400px;
+    }
+    
+    .product-details h1 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .product-details details {
+        margin: 5px;
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+    .size-selection {
+        margin: 20px 0;
+    }
+    
+    .size-selection label {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    
+    .size-selection select {
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    
+    .product-description ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .product-description ul li {
+        text-align: left;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    .action-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .action-buttons button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+    }
+    
+    .action-buttons button:hover {
+        background-color: #333;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .footerkanan h2,.footerkiri h2 {
+        border-bottom: 3px solid white;
+        width: 170px;
+        align-items: left;
+        margin: 0 0 15px 0;
+        padding: 0 0 10px 0;
+    }
+
+    .footerkanan h2{
+        width: 320px;
+    }
+
+    .footer-container{
+        display: flex;
+        padding: 25px 0 70px 40px;
+        
+    }
+
+    .footer-container li{
+        list-style: none;
+        margin: 0 0 10px 0;
+    }
+
+    .footerkanan{
+        margin: 0 0 0 100px;
+    }
+    .footer-container a{
+        color: white;
+    }
